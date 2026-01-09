@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 public class EmployeeDao {
 	private Connection getConnection() throws Exception {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		return DriverManager.getConnection("jdbc:mysql://localhost:3306/office","root","shraddha20");
+		return DriverManager.getConnection("jdbc:mysql://localhost:3306/office","root","YOUR_PASSWORD");
 	}
 
 
@@ -80,4 +80,5 @@ public void getAllEmployee(PojoEmployee emp) throws Exception {
 	}
 
 }
+
 
